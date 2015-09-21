@@ -1,0 +1,212 @@
+.dog-card {
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-size: 16px;
+  min-height: 200px;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+  background: #fff;
+  border-radius: 2px;
+  box-sizing: border-box;
+  width: 320px;
+  height: 320px;
+  margin-bottom: 35px;
+}
+
+.dog-card > .dog-title {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #000;
+  display: block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: stretch;
+  -webkit-justify-content: stretch;
+  -ms-flex-pack: stretch;
+  justify-content: stretch;
+  line-height: normal;
+  padding: 16px;
+  -webkit-perspective-origin: 165px 56px;
+  perspective-origin: 165px 56px;
+  -webkit-transform-origin: 165px 56px;
+  -ms-transform-origin: 165px 56px;
+  transform-origin: 165px 56px;
+  box-sizing: border-box;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.dog-title > .dog-title-text {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  display: block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: normal;
+  overflow: hidden;
+  -webkit-transform-origin: 149px 48px;
+  -ms-transform-origin: 149px 48px;
+  transform-origin: 149px 48px;
+  margin: 0;
+  color: #353535;
+}
+
+.dog-actions {
+  font-size: 16px;
+  line-height: normal;
+  width: 100%;
+  background-color: transparent;
+  padding: 8px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.mdl-navigation > a.active {
+  background-color: #7989E2;
+}
+
+.site-title {
+  color: #fff;
+  text-decoration: none;
+}
+
+#theDogs {
+	display: flex;
+	align-content: flex-start;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+#pagination {
+	text-align: right;
+	margin-right: 40px;
+  margin-bottom: 35px;
+}
+
+#pagination > ul > li {
+	display: inline;
+	font-size: 24px;
+	margin-left: 10px;
+}
+
+#pagination > ul > li > a {
+	text-decoration: none;
+}
+
+#nextPage {
+	cursor: pointer;
+	color: #ff4081;
+  font-weight: 500;
+}
+
+.dog-button,
+.not-dog-button {
+  background: rgba(158,158,158,.2);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.dog-button:hover,
+.not-dog-button:hover {
+	background: #FF92B7;
+	color: white;
+}
+
+.dog-button.mdl-button--colored,
+.not-dog-button.mdl-button--colored {
+  background-color: #3f51b5;
+  color: #fff;
+}
+
+.result-good,
+.result-bad {
+	position: absolute;
+	bottom: 16px;
+	right: 16px;
+}
+
+.result-good > i,
+.result-bad > i {
+	font-size: 46px;
+}
+
+.result-good {
+	color: rgb(76,175,80);
+}
+
+.result-bad {
+	color: rgb(244,67,54);
+}
+
+.mdl-typography--text-center > h1 {
+	margin-bottom: 0;
+}
+
+.mdl-typography--text-center {
+	margin-bottom: 15px
+	;
+}
+
+#resetLink {
+	color: lightgray;
+	cursor: pointer;
+	margin-bottom: 15px;
+}
+
+#resetLink:hover {
+	color: gray;
+}
+
+.mdl-layout__header-row,
+#theDogs {
+	padding: 0 40px;
+}
+
+#languageSwitch {
+  position: fixed;
+  right: 50px;
+  top: 60px;
+  z-index: 2;
+}
+
+#languageSwitch > button {
+  background: #ddd;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+#score {
+  position: fixed;
+  left: 25px;
+  top: 60px;
+  z-index: 2;
+}
+
+#score > button {
+  cursor: default;
+  background: #ddd;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+#score > button > small {
+  cursor: pointer;
+  margin-left: 8px;
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html class="mdl-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dog or Not?</title>
+    <link rel="stylesheet" href="bower_components/material-design-lite/material.min.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <div class="mdl-layout__header mdl-layout__header--waterfall">
+            <div class="mdl-layout__header-row">
+                <a class="site-title">
+                  <span class="mdl-layout-title">
+										dog or not?
+									</span>
+                </a>
+                <!-- Add spacer, to align navigation to the right in desktop -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation -->
+                <div>
+                    <nav class="mdl-navigation">
+                        <a class="mdl-navigation__link mdl-typography--text-uppercase" href="?filter=dogs">Dogs</a>
+                        <a class="mdl-navigation__link mdl-typography--text-uppercase" href="?filter=not_dogs">Not Dogs</a>
+                        <a class="mdl-navigation__link mdl-typography--text-uppercase" href="?filter=maybe_dogs">Maybe Dogs</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div id="score"><button class="mdl-button">
+            0 correct |
+            0 incorrect |
+            22 incomplete
+          <small>Reset?</small>
+        </button>
+        </div>
+        <div id="languageSwitch">
+          <button class="mdl-button">
+            dog?
+          </button>
+        </div>
+        <div class="mdl-layout__content">
+            <a name="top"></a>
+            <div class="mdl-typography--text-center">
+                <h1>dog or not?</h1>
+            </div>
+            <div id="theDogs">
+                <div class="mdl-card mdl-shadow--2dp dog-card" data-dog-id="goofy">
+                    <div class="mdl-card__title mdl-card--expand" style="background: url('images/goofy_dog.jpg') center 15% no-repeat #46B6AC;">
+                        <h2 class="mdl-card__title-text">Goofy</h2>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                	    <button class="mdl-button mdl-button--raised dog-button">
+                			  dog
+                			</button>
+                			<button class="mdl-button mdl-button--raised not-dog-button">
+                			  not
+                			</button>
+                	  </div>
+                </div>
+                <div class="mdl-card mdl-shadow--2dp dog-card" data-dog-id="baby">
+                    <div class="mdl-card__title mdl-card--expand" style="background: url('images/bubby_bunny.jpg') center 15% no-repeat #46B6AC;">
+                        <h2 class="mdl-card__title-text">Baby</h2>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                	    <button class="mdl-button mdl-button--raised dog-button">
+                			  dog
+                			</button>
+                			<button class="mdl-button mdl-button--raised not-dog-button">
+                			  not
+                			</button>
+                	  </div>
+                </div>
+                <div class="mdl-card mdl-shadow--2dp dog-card" data-dog-id="bunny">
+                    <div class="mdl-card__title mdl-card--expand" style="background: url('images/bunny_dog.jpg') center 15% no-repeat #46B6AC;">
+                        <h2 class="mdl-card__title-text">Bunny</h2>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                	    <button class="mdl-button mdl-button--raised dog-button">
+                			  dog
+                			</button>
+                			<button class="mdl-button mdl-button--raised not-dog-button">
+                			  not
+                			</button>
+                	  </div>
+                </div>
+                <div class="mdl-card mdl-shadow--2dp dog-card" data-dog-id="caged">
+                    <div class="mdl-card__title mdl-card--expand" style="background: url('images/caged_heat.jpg') center 15% no-repeat #46B6AC;">
+                        <h2 class="mdl-card__title-text">Caged Heat</h2>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                	    <button class="mdl-button mdl-button--raised dog-button">
+                			  dog
+                			</button>
+                			<button class="mdl-button mdl-button--raised not-dog-button">
+                			  not
+                			</button>
+                	  </div>
+                </div>
+                <div class="mdl-card mdl-shadow--2dp dog-card" data-dog-id="cloudy">
+                    <div class="mdl-card__title mdl-card--expand" style="background: url('images/cloudy_bunny.jpg') center 15% no-repeat #46B6AC;">
+                        <h2 class="mdl-card__title-text">Cloudy</h2>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                	    <button class="mdl-button mdl-button--raised dog-button">
+                			  dog
+                			</button>
+                			<button class="mdl-button mdl-button--raised not-dog-button">
+                			  not
+                			</button>
+                	  </div>
+                </div>
+                <div class="mdl-card mdl-shadow--2dp dog-card" data-dog-id="curious">
+                    <div class="mdl-card__title mdl-card--expand" style="background: url('images/curious_pig.jpg') center 15% no-repeat #46B6AC;">
+                        <h2 class="mdl-card__title-text">Curious</h2>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                	    <button class="mdl-button mdl-button--raised dog-button">
+                			  dog
+                			</button>
+                			<button class="mdl-button mdl-button--raised not-dog-button">
+                			  not
+                			</button>
+                	  </div>
+                </div>
+            </div>
+            <div id="pagination">
+                <ul>
+                    <li><a href="index.html">1</a></li>
+                    <li><a href="page2.html">2</a></li>
+                    <li><a href="page3.html">3</a></li>
+                    <li><a href="page4.html">4</a></li>
+                </ul>
+            </div>
+            <footer class="mdl-mega-footer">
+                <div class="mdl-mega-footer--top-section">
+                    <p class="mdl-typography--font-light">© 2015 Ryan Lewis</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/handlebars/handlebars.min.js"></script>
+    <script src="bower_components/material-design-lite/material.min.js"></script>
+    <script src="js/dogPack.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
